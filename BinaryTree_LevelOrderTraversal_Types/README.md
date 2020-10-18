@@ -27,8 +27,8 @@ Trees have several ways of traversing them.<br/><br/>
 **Breadth-First-Search Traversal** or **Level-Order traversal**:  
 * We visit each node level by level.
 
-> Refer to [this](../img/traversals.png) to get an idea about inorder,preorder,postorder and level-order traversal for binary tree.<br/>
-> Refer to [this](/src/dfs.cpp) for the code for depth first search traversal.
+> Refer to [this](img/traversals.png) to get an idea about inorder,preorder,postorder and level-order traversal for binary tree.<br/>
+> Refer to [this](src/dfs.cpp) for the code for depth first search traversal.
 
 <br/>
 
@@ -67,7 +67,7 @@ The algorithm for this would be : <br/>
      c. Check if 'temp' has a right child, if yes,push it into the queue 'q'. <br/>
      d. Dequeue(pop) the element from the queue 'q'.
 
-This is implemented in [level_order.cpp](/src/level_order.cpp). 
+This is implemented in [level_order.cpp](src/level_order.cpp). 
 
 
 Can you guess what the time and space complexity would be?
@@ -88,7 +88,7 @@ So,do you think we can instead start printing from the last level all the way to
 Well,we can definetely do that as well!<br/>
 This is problem is called **'Reverse Level Order Traversal'** and is one of the variations of the normal level order traversal.
 
-For an example of this,refer to [this image](/img/reverse_level_order_traversal.png).
+For an example of this,refer to [this image](img/reverse_level_order_traversal.png).
 
 One way of implementing this would be by using a stack along with the queue by slightly modifying Algorithm-1. <br/>
 
@@ -106,7 +106,7 @@ One way of implementing this would be by using a stack along with the queue by s
      a. Print the top of stack 'st'. <br/>
      b. Pop the element from the stack 'st'. <br/>
 
-This algorithm is implemented in [this file](/src/reverse_level_order.cpp).<br/>
+This algorithm is implemented in [this file](src/reverse_level_order.cpp).<br/>
 
 <hr>
 
@@ -115,7 +115,7 @@ So, in this activity, we will be looking at a famous variation of the basic leve
 **Level Order Traversal in Spiral Form** also called **Zig-Zag level-order traversal** <br/>
 That is, starting from the root,we print the a level from left-to-right and then the next level from right-to-left and so on till the last level.
 
-Refer to [this picture](/img/zigzag.png) to get an idea of it. 
+Refer to [this picture](img/zigzag.png) to get an idea of it. 
 
 Can you try to write the algorithm for this? 
 
@@ -125,8 +125,8 @@ You've got this!! <br/>
 If you are done writing your algorithm, Congratulations! <br/>
 Even if you were unable to get an idea about this,there is nothing to worry, just don't give up and you will ultimately reach there! <br/>
 
-You can get the algorithm [here](/src/zigzag.txt). <br/>
-This algorithm is implemented in [this file](/src/zigzag.cpp).
+You can get the algorithm [here](src/zigzag.txt). <br/>
+This algorithm is implemented in [this file](src/zigzag.cpp).
 
 **Further exploration:**
 * How would you go about implementing this using 2 stacks ?
@@ -135,7 +135,7 @@ This algorithm is implemented in [this file](/src/zigzag.cpp).
 
 ### ACTIVITY 4:
 Here,let us look at **'Reverse level order traversal in spiral form'** or **Reverse zig-zag level order traversal** .</br>
-Refer to [this image](/img/reverse_zigzag.png) to get an idea.
+Refer to [this image](img/reverse_zigzag.png) to get an idea.
 <br/><br/>
 Can you try doing it on your own?
 <br/><br/>
@@ -175,7 +175,7 @@ Here, we use a queue and a stack to solve this problem.
 
 
 Don't get intimidated by this algorithm,its not that hard :)
-This algorithm is implemented [here](/src/reverse_spiral.cpp).
+This algorithm is implemented [here](src/reverse_spiral.cpp).
 
 <hr>
 
@@ -189,7 +189,7 @@ So here ,we want to print **level order traversal line by line**. Can you try do
 
 
 
-Code for this is available [here](/src/levelOrder_lineByLine.cpp).
+Code for this is available [here](src/levelOrder_lineByLine.cpp).
 
 <hr>
 
