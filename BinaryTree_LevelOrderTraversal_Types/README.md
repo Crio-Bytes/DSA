@@ -27,7 +27,7 @@ Trees have several ways of traversing them.<br/><br/>
 **Breadth-First-Search Traversal** or **Level-Order traversal**:  
 * We visit each node level by level.
 
-> Refer to [this](img/traversals.png) to get an idea about inorder,preorder,postorder and level-order traversal for binary tree.<br/>
+> Refer to [this](./img/traversals.png) to get an idea about inorder,preorder,postorder and level-order traversal for binary tree.<br/>
 > Refer to [this](/src/dfs.cpp) for the code for depth first search traversal.
 
 <br/>
