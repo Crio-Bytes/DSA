@@ -40,12 +40,12 @@ Trees have several ways of traversing them.<br/><br/>
 # PREREQUISITES:
 * A machine with g++ compiler installed.
 * Knowledge of how queue and stack data structures work.
-* Loads of enthusiam and a zest for knowledge!
+* Loads of enthusiasm and a zest for knowledge!
 
 
 #### NOTE:
 >To run the code,use the command: <br/>
-  &nbsp;&nbsp;  g++ ProgramName.cc -o ProgramName <br/>
+  &nbsp;&nbsp;  g++ ProgramName.cpp -o ProgramName <br/>
   &nbsp;&nbsp; ./ProgramName </br>
 where ProgramName is the name of the program.
 
