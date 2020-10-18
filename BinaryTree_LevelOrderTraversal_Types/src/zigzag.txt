@@ -1,0 +1,19 @@
+
+zigzag_LevelOrderTraversal(root):
+
+1) Create an empty queue 'q' and an empty stack 'st'
+2) Initialize a boolean variable 'reverse' to true
+3) Push the root to the queue
+4) While the queue 'q' is not empty:
+   a) Get the current size 'size' of the queue 'q'.
+   b) While size != 0 :
+        (i) Get element 'temp' from front of the queue 'q'
+        (ii) If 'reverse'== true ,push temp to the stack st else print the element
+        (iii) If temp has a left child,push it to the queue 'q'
+        (iv) If temp has a right child,push it to the queue 'q'
+        (v) Decrement 'size' by 1
+   c) If 'reverse'==true:
+        (i)While stack 'st' does not become empty:
+            * Print top of stack
+            * Pop top of stack
+   d) 'reverse' = !'reverse'
