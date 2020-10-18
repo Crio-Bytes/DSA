@@ -12,7 +12,7 @@ A binary tree  serves as a **collection of nodes**. A node is an object that has
 * the right child.  
 
 The data in a binary tree is stored in **different levels**.<br/>
-Refer to [this](BinaryTree_LevelOrderTraversal_Types/img/levels.png) to get an idea about the different levels in a binary tree.
+Refer to [this](img/levels.png) to get an idea about the different levels in a binary tree.
 
 We could access the data in the binary tree by traversing it.
 
