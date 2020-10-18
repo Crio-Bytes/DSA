@@ -44,9 +44,9 @@ Trees have several ways of traversing them.<br/><br/>
 
 
 #### NOTE:
->To run the code,use the command : 
-   g++ ProgramName.cc -o ProgramName
-   ./ProgramName
+>To run the code,use the command: <br/>
+  &nbsp;&nbsp;  g++ ProgramName.cc -o ProgramName <br/>
+  &nbsp;&nbsp; ./ProgramName </br>
 where ProgramName is the name of the program.
 
 
