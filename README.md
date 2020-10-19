@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # Introduction
@@ -25,6 +25,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://kevinpaulose05.github.io/"><img src="https://avatars3.githubusercontent.com/u/64629493?v=4" width="100px;" alt=""/><br /><sub><b>Kevin Paulose</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=Kevinpaulose05" title="Code">💻</a> <a href="https://github.com/Crio-Bytes/DSA/commits?author=Kevinpaulose05" title="Documentation">📖</a> <a href="#ideas-Kevinpaulose05" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-Kevinpaulose05" title="Content">🖋</a> <a href="https://github.com/Crio-Bytes/DSA/pulls?q=is%3Apr+reviewed-by%3AKevinpaulose05" title="Reviewed Pull Requests">👀</a> <a href="#eventOrganizing-Kevinpaulose05" title="Event Organizing">📋</a></td>
+    <td align="center"><a href="https://github.com/amoghrajesh"><img src="https://avatars2.githubusercontent.com/u/35884252?v=4" width="100px;" alt=""/><br /><sub><b>Amogh Rajesh Desai</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/pulls?q=is%3Apr+reviewed-by%3Aamoghrajesh" title="Reviewed Pull Requests">👀</a> <a href="#eventOrganizing-amoghrajesh" title="Event Organizing">📋</a></td>
   </tr>
 </table>
 
