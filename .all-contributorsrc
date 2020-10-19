@@ -1,0 +1,28 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Kevinpaulose05",
+      "name": "Kevin Paulose",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/64629493?v=4",
+      "profile": "https://kevinpaulose05.github.io/",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "content",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "DSA",
+  "projectOwner": "Crio-Bytes",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
