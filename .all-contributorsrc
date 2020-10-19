@@ -50,6 +50,18 @@
         "review",
         "eventOrganizing"
       ]
+    },
+    {
+      "login": "divyanshrastogi51",
+      "name": "Divyansh Rastogi",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/54467001?v=4",
+      "profile": "https://www.divyanshrastogi.xyz/",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
