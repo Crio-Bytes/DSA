@@ -28,6 +28,18 @@
         "review",
         "eventOrganizing"
       ]
+    },
+    {
+      "login": "Anjalikamath",
+      "name": "K Anjali Kamath",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/41792345?v=4",
+      "profile": "https://github.com/Anjalikamath",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
