@@ -116,8 +116,8 @@ int main()
 
     int level = 2;
 
-	cout << "Max Node in a Binary Tree of a given Level  is \n"; 
-	cout << findMaxNodeatLevel(root,level); 
+	cout << "Max Node at level " << level << " : " << findMaxNodeatLevel(root,level); 
+	
 
 	return 0; 
 } 
