@@ -95,6 +95,16 @@
         "review",
         "eventOrganizing"
       ]
+    },
+    {
+      "login": "DivyaSaravanan",
+      "name": "Divya_S",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/42182403?v=4",
+      "profile": "https://github.com/DivyaSaravanan",
+      "contributions": [
+        "code",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
