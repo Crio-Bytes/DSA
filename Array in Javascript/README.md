@@ -163,7 +163,29 @@ We would have to loop through the whole array (worst case) or until we find it: 
 Full code can be found at [here](src/searching.js)
 ### Micro-Challenge
 Can you find more efficient solution ? Create a PR and add it here as Micro-Challenge solution
-
+Solution:
+A more efficient solution would be using binary search.
+```
+function binarySearch(arr, val, lo, hi) {
+    while(lo <= hi) {
+        let mid = lo + (hi - lo) / 2; 
+        if(val == arr[mid]) {
+          return mid;
+        }
+        else if(val > arr[mid]) {
+          lo = mid + 1;
+        }
+        else {
+          hi = mid - 1;
+        }
+    }
+    return -1;
+}
+function searchByValue(arr, val) {
+    return binarySearch(arr, val, 0, arr.length - 1);
+} 
+```
+Time complexity: O(log n) 
 # Summary
 We just learned most common operations of array and their runtimes. Amazing right? now we can go ahead, do further excercise.
 Congo on completing this MicroByte!  Don't forget to add your solutions.
