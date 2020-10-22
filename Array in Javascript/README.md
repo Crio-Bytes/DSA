@@ -77,14 +77,54 @@ Full code can be found at [here](src/insertion.js)
 ### Micro-Challenge
 Can you find A way to clone an array. Create a PR and add it here as Micro-Challenge Solution
 Solution:
-An array can be cloned by returning the element in our map call like this-
+There are several ways to clone an array:
+1. Using loops: Copying elements one by one into the new array. You should ideally be able to do this by yourself. In case you are unable to solve the solution is given below:
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+
+``` 
+let arr1 = [2, 3, 6, 1];
+let arr2 = [];
+for(el of arr1) {
+     arr2.push(el);
+}
+console.log(arr2);
+// arr2: [2, 3, 6, 1]
+```
+
+</details>
+
+2. Using array.map: It calls the function for each element of the array and returns the array of results. An array can be cloned by returning the element in our map call.
+    First try yourself. Check the solution only if you get stuck.
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
 
 ```
 let arr1 = [2, 3, 6, 1];
 let arr2 = arr1.map((x) => x);
 // arr2: [2, 3, 6, 1];
+//(x) => x is called identity. It returns whatever parameter it's been given.
 ```
-(x) => x is called identity. It returns whatever parameter it's been given.
+
+</details>
+
+3. Using array.slice(): It returns a new array copying to it all items from index start to end. Do give it a try. You can see the solution in case you are unable to solve.
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+    
+```
+let arr1 = [2, 3, 6, 1];
+let arr2 = arr1.slice();
+// arr2: [2, 3, 6, 1];
+```
+    
+</details>  
+ 
+There several other ways of cloning an array. Find out one such way. (You can create a PR and add it here)
+
 ### ACTIVITY 2:
 ## Deletion
 There are three possible deletion scenarios (similar to insertion): removing at the beginning, middle, or end.
@@ -117,14 +157,27 @@ Full code can be found at [here](src/deletion.js)
 ### Micro-Challenge
 How to remove multiple elements from array in JavaScript ? Give it a try create a PR and add it here as Micro-Challenge Solution
 Solution:
-If we want to remove consecutive elements from an array(from a particular index) then we can use the "splice" method.
+If we want to remove consecutive elements from an array(from a particular index) then we can use the "splice" method. Try googling about the "splice" method and solve this. 
+In case you are stuck, you can look up the solution given below.
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+
 ```
 const arr = [1, 2, 3, 4, 5, 6, 7];
 // we want to remove 3 elements starting from index 2
 arr.splice(2, 3);
 // arr: [1, 2, 6, 7]
 ```
-If we want to remove multiple elements from an array which aren't necessarily consecutive then we can follow the method given below:
+
+</details>  
+
+If we want to remove multiple elements from an array which aren't necessarily consecutive then we can remove it one by one by using a loop. Give it a try.(Hint: "splice" will be 
+used here too)
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+
 ```
 const arr = [1, 2, 3, 4, 5, 6, 7];
 // we want to remove 3 elements: elements at indices 1, 3 and 4
@@ -135,6 +188,9 @@ for (let i = removeElementAtIndex.length - 1; i >= 0; i--) {
 // arr: [1, 3, 6, 7]
 // We are traversing the "removeElementAtIndex" array in reverse order so that the indices of the elements yet to be removed are not messed up
 ```
+
+</details>  
+
 ### ACTIVITY 3:
 ## Searching 
 There are two possible searching.
@@ -206,3 +262,4 @@ Congo on completing this MicroByte!  Don't forget to add your solutions.
 - [MDN Web Docs: Unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 - [MDN Web Docs: Shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 - https://stackoverflow.com/questions/9425009/remove-multiple-elements-from-array-in-javascript-jquery
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
