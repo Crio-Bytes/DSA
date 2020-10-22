@@ -75,7 +75,7 @@ array.push(4);
 The 4 element would be pushed to the end of the array. Notice that push returns the new length of the array. Adding to the tail of the array doesn’t change other indexes. E.g., element 2 is still at index 0. So, this is a constant time operation O(1).
 Full code can be found at [here](src/insertion.js)
 ### Micro-Challenge
-Can you find A way to clone an array. Create a PR and add it here as Micro-Challenge Solution
+Can you find A way to clone an array. 
 Solution:
 There are several ways to clone an array:
 1. Using loops: Copying elements one by one into the new array. You should ideally be able to do this by yourself. In case you are unable to solve the solution is given below:
@@ -155,7 +155,7 @@ array.pop();
 No other element has been shifted, so it’s an O(1) runtime.
 Full code can be found at [here](src/deletion.js)
 ### Micro-Challenge
-How to remove multiple elements from array in JavaScript ? Give it a try create a PR and add it here as Micro-Challenge Solution
+How to remove multiple elements from array in JavaScript ? 
 Solution:
 If we want to remove consecutive elements from an array(from a particular index) then we can use the "splice" method. Try googling about the "splice" method and solve this. 
 In case you are stuck, you can look up the solution given below.
@@ -218,7 +218,7 @@ function searchByValue(array, value) {
 We would have to loop through the whole array (worst case) or until we find it: O(n).
 Full code can be found at [here](src/searching.js)
 ### Micro-Challenge
-Can you find more efficient solution ? Create a PR and add it here as Micro-Challenge solution
+Can you find more efficient solution ? 
 Solution:
 A more efficient solution would be using binary search.
 First try it yourself. If you are unable to solve look at the solution below:
