@@ -116,6 +116,25 @@ No other element has been shifted, so it’s an O(1) runtime.
 Full code can be found at [here](src/deletion.js)
 ### Micro-Challenge
 How to remove multiple elements from array in JavaScript ? Give it a try create a PR and add it here as Micro-Challenge Solution
+Solution:
+If we want to remove consecutive elements from an array(from a particular index) then we can use the "splice" method.
+```
+const arr = [1, 2, 3, 4, 5, 6, 7];
+// we want to remove 3 elements starting from index 2
+arr.splice(2, 3);
+// arr: [1, 2, 6, 7]
+```
+If we want to remove multiple elements from an array which aren't necessarily consecutive then we can follow the method given below:
+```
+const arr = [1, 2, 3, 4, 5, 6, 7];
+// we want to remove 3 elements: elements at indices 1, 3 and 4
+const removeElementAtIndex = [1, 3, 4];
+for (let i = removeElementAtIndex.length - 1; i >= 0; i--) {
+    arr.splice(removeElementAtIndex[i], 1);
+}
+// arr: [1, 3, 6, 7]
+// We are traversing the "removeElementAtIndex" array in reverse order so that the indices of the elements yet to be removed are not messed up
+```
 ### ACTIVITY 3:
 ## Searching 
 There are two possible searching.
@@ -155,3 +174,4 @@ Congo on completing this MicroByte!  Don't forget to add your solutions.
 - [MDN Web Docs: Splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 - [MDN Web Docs: Unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 - [MDN Web Docs: Shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+- https://stackoverflow.com/questions/9425009/remove-multiple-elements-from-array-in-javascript-jquery
