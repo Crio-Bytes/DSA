@@ -75,33 +75,7 @@ int get_height(Node* root){
     return 1+ max (leftheight, rightheight);
 }
 
-int main()
-{
-
-    // making of a sample tree
-    Node* root = new Node(10);  
-    root->left = new Node(12);  
-    root->right = new Node(13);  
-    root->right->left = new Node(14);  
-    root->right->right = new Node(15);  
-    root->right->left->left = new Node(21);  
-    root->right->left->right = new Node(22);  
-    root->right->right->left = new Node(23);  
-    root->right->right->right = new Node(24); 
-
-
-    // make a matrix to convert the tree in form of a matrix, by level order traversal
-    // matrix of height, width size
-    int width = get_width(root);
-    int height = get_height(root);
-    int elements[height][width];
-
-
-    // initializing the matrix
-    for (int i=0; i<height; i++)
-        for (int j=0; j<width; j++)
-            elements[i][j] = INT_MAX;
-    
+void fill_matrix(Node* root, int** elements){
     // Traversal of the binary tree, filling the matrix
     queue <Node*> trav;
     trav.push(root);
@@ -122,25 +96,21 @@ int main()
         }
         col = -1;
     }
+}
 
-    // for (int i=0; i<height; i++){
-    //     cout<<endl;
-    //     for (int j=0; j<width; j++)
-    //         cout<<elements[i][j]<<"  ";
-    // }
-
-    // Traversing the matrix in spiral form and printing the numbers except the initialized ones
+void print_matrix(int** elements, int height, int width){
+    string final="";
     int uppr_row=0, lower_row=height-1;
     for (int rnd=0; rnd<height/2; rnd++){
         for (int i=0; i<width; i++){
             if (elements[uppr_row][i]!=INT_MAX)
-                cout<<elements[uppr_row][i]<<" , ";
+                final += to_string(elements[uppr_row][i]) + " ,";
         }
         uppr_row++;
 
         for (int i=width-1; i>=0; i--){
             if (elements[lower_row][i]!=INT_MAX)
-                cout<<elements[lower_row][i]<<" , ";
+                final += to_string(elements[lower_row][i]) + " ,";
         }
         lower_row--;
     }
@@ -148,12 +118,47 @@ int main()
     if (height%2){
         for (int i=0; i<width; i++){
             if (elements[uppr_row][i]!=INT_MAX)
-                cout<<elements[uppr_row][i]<<" , ";
+                final += to_string(elements[uppr_row][i]) + " ,";
         }
     }
+    cout<<(final.substr(0, final.length() - 1));
+}
 
-     
+void print_spiral(Node* root){
+    // make a matrix to convert the tree in form of a matrix, by level order traversal
+    // matrix of height, width size
+    int width = get_width(root);
+    int height = get_height(root);
 
+    int **elements = new int*[height];
+    for (int i=0; i<height; i++)
+        elements[i] = new int[width];
+
+    // initializing the matrix
+    for (int i=0; i<height; i++)
+        for (int j=0; j<width; j++)
+            elements[i][j] = INT_MAX;
+
+    fill_matrix(root, elements);
+    print_matrix(elements, height, width);
+}
+
+int main()
+{
+
+    // making of a sample tree
+    Node* root = new Node(10);  
+    root->left = new Node(12);  
+    root->right = new Node(13);  
+    root->right->left = new Node(14);  
+    root->right->right = new Node(15);  
+    root->right->left->left = new Node(21);  
+    root->right->left->right = new Node(22);  
+    root->right->right->left = new Node(23);  
+    root->right->right->right = new Node(24); 
+
+    print_spiral (root);
+    
     return 0;
 }
 
