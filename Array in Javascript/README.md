@@ -165,7 +165,12 @@ Full code can be found at [here](src/searching.js)
 Can you find more efficient solution ? Create a PR and add it here as Micro-Challenge solution
 Solution:
 A more efficient solution would be using binary search.
-```
+First try it yourself. If you are unable to solve look at the solution below:
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+
+```javascript
 function binarySearch(arr, val, lo, hi) {
     while(lo <= hi) {
         let mid = lo + (hi - lo) / 2; 
@@ -183,9 +188,13 @@ function binarySearch(arr, val, lo, hi) {
 }
 function searchByValue(arr, val) {
     return binarySearch(arr, val, 0, arr.length - 1);
-} 
+}
 ```
+
 Time complexity: O(log n) 
+
+</details>
+
 # Summary
 We just learned most common operations of array and their runtimes. Amazing right? now we can go ahead, do further excercise.
 Congo on completing this MicroByte!  Don't forget to add your solutions.
