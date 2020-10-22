@@ -124,7 +124,7 @@ void print_matrix(int** elements, int height, int width){
     cout<<(final.substr(0, final.length() - 1));
 }
 
-void print_spiral(Node* root){
+void print_clockwise_spiral(Node* root){
     // make a matrix to convert the tree in form of a matrix, by level order traversal
     // matrix of height, width size
     int width = get_width(root);
@@ -157,7 +157,7 @@ int main()
     root->right->right->left = new Node(23);  
     root->right->right->right = new Node(24); 
 
-    print_spiral (root);
+    print_clockwise_spiral (root);
     
     return 0;
 }
