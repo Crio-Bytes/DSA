@@ -76,7 +76,15 @@ The 4 element would be pushed to the end of the array. Notice that push returns 
 Full code can be found at [here](src/insertion.js)
 ### Micro-Challenge
 Can you find A way to clone an array. Create a PR and add it here as Micro-Challenge Solution
+Solution:
+An array can be cloned by returning the element in our map call like this-
 
+```
+let arr1 = [2, 3, 6, 1];
+let arr2 = arr1.map((x) => x);
+// arr2: [2, 3, 6, 1];
+```
+(x) => x is called identity. It returns whatever parameter it's been given.
 ### ACTIVITY 2:
 ## Deletion
 There are three possible deletion scenarios (similar to insertion): removing at the beginning, middle, or end.
