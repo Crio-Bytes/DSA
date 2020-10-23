@@ -75,7 +75,55 @@ array.push(4);
 The 4 element would be pushed to the end of the array. Notice that push returns the new length of the array. Adding to the tail of the array doesn’t change other indexes. E.g., element 2 is still at index 0. So, this is a constant time operation O(1).
 Full code can be found at [here](src/insertion.js)
 ### Micro-Challenge
-Can you find A way to clone an array. Create a PR and add it here as Micro-Challenge Solution
+Can you find A way to clone an array. 
+Solution:
+There are several ways to clone an array:
+1. Using loops: Copying elements one by one into the new array. You should ideally be able to do this by yourself. In case you are unable to solve the solution is given below:
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+
+``` 
+let arr1 = [2, 3, 6, 1];
+let arr2 = [];
+for(el of arr1) {
+     arr2.push(el);
+}
+console.log(arr2);
+// arr2: [2, 3, 6, 1]
+```
+
+</details>
+
+2. Using array.map: It calls the function for each element of the array and returns the array of results. An array can be cloned by returning the element in our map call.
+    First try yourself. Check the solution only if you get stuck.
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+
+```
+let arr1 = [2, 3, 6, 1];
+let arr2 = arr1.map((x) => x);
+// arr2: [2, 3, 6, 1];
+//(x) => x is called identity. It returns whatever parameter it's been given.
+```
+
+</details>
+
+3. Using array.slice(): It returns a new array copying to it all items from index start to end. Do give it a try. You can see the solution in case you are unable to solve.
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+    
+```
+let arr1 = [2, 3, 6, 1];
+let arr2 = arr1.slice();
+// arr2: [2, 3, 6, 1];
+```
+    
+</details>  
+ 
+There several other ways of cloning an array. Find out one such way. (You can create a PR and add it here)
 
 ### ACTIVITY 2:
 ## Deletion
@@ -107,7 +155,42 @@ array.pop();
 No other element has been shifted, so it’s an O(1) runtime.
 Full code can be found at [here](src/deletion.js)
 ### Micro-Challenge
-How to remove multiple elements from array in JavaScript ? Give it a try create a PR and add it here as Micro-Challenge Solution
+How to remove multiple elements from array in JavaScript ? 
+Solution:
+If we want to remove consecutive elements from an array(from a particular index) then we can use the "splice" method. Try googling about the "splice" method and solve this. 
+In case you are stuck, you can look up the solution given below.
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+
+```
+const arr = [1, 2, 3, 4, 5, 6, 7];
+// we want to remove 3 elements starting from index 2
+arr.splice(2, 3);
+// arr: [1, 2, 6, 7]
+```
+
+</details>  
+
+If we want to remove multiple elements from an array which aren't necessarily consecutive then we can remove it one by one by using a loop. Give it a try.(Hint: "splice" will be 
+used here too)
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+
+```
+const arr = [1, 2, 3, 4, 5, 6, 7];
+// we want to remove 3 elements: elements at indices 1, 3 and 4
+const removeElementAtIndex = [1, 3, 4];
+for (let i = removeElementAtIndex.length - 1; i >= 0; i--) {
+    arr.splice(removeElementAtIndex[i], 1);
+}
+// arr: [1, 3, 6, 7]
+// We are traversing the "removeElementAtIndex" array in reverse order so that the indices of the elements yet to be removed are not messed up
+```
+
+</details>  
+
 ### ACTIVITY 3:
 ## Searching 
 There are two possible searching.
@@ -135,7 +218,38 @@ function searchByValue(array, value) {
 We would have to loop through the whole array (worst case) or until we find it: O(n).
 Full code can be found at [here](src/searching.js)
 ### Micro-Challenge
-Can you find more efficient solution ? Create a PR and add it here as Micro-Challenge solution
+Can you find more efficient solution ? 
+Solution:
+A more efficient solution would be using binary search.
+First try it yourself. If you are unable to solve look at the solution below:
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
+
+```javascript
+function binarySearch(arr, val, lo, hi) {
+    while(lo <= hi) {
+        let mid = lo + (hi - lo) / 2; 
+        if(val == arr[mid]) {
+          return mid;
+        }
+        else if(val > arr[mid]) {
+          lo = mid + 1;
+        }
+        else {
+          hi = mid - 1;
+        }
+    }
+    return -1;
+}
+function searchByValue(arr, val) {
+    return binarySearch(arr, val, 0, arr.length - 1);
+}
+```
+
+Time complexity: O(log n) 
+
+</details>
 
 # Summary
 We just learned most common operations of array and their runtimes. Amazing right? now we can go ahead, do further excercise.
@@ -147,3 +261,5 @@ Congo on completing this MicroByte!  Don't forget to add your solutions.
 - [MDN Web Docs: Splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 - [MDN Web Docs: Unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 - [MDN Web Docs: Shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+- https://stackoverflow.com/questions/9425009/remove-multiple-elements-from-array-in-javascript-jquery
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
