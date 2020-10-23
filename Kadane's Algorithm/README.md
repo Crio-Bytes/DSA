@@ -4,7 +4,7 @@ Given an array of n numbers, our task is to calculate the maximum subarray sum, 
 array.
 For example, in the array
 
-![Kadane](img/Maximum SubArray Sum.png)
+![Maximum Subarray Sum](https://github.com/G1Joshi/DSA/blob/patch-2/Kadane's%20Algorithm/img/Maximum%20Subarray%20Sum.png)
 
 ---
 
@@ -17,15 +17,15 @@ The following code implements this algorithm:
 int best = 0;
 
 for (int a = 0; a < n; a++) {
+    for (int b = a; b < n; b++) {
+        int sum = 0;
+        for (int k = a; k <= b; k++) {
+            sum += array[k];
+        }
+        best = max(best,sum);
+    }
+}
 
-for (int b = a; b < n; b++) {
-int sum = 0;
-for (int k = a; k <= b; k++) {
-sum += array[k];
-}
-best = max(best,sum);
-}
-}
 cout << best << "\n";
 ```
 
@@ -43,13 +43,13 @@ The result is the following code:
 int best = 0;
 
 for (int a = 0; a < n; a++) {
+    int sum = 0;
+    for (int b = a; b < n; b++) {
+        sum += array[b];
+        best = max(best,sum);
+    }
+}
 
-int sum = 0;
-for (int b = a; b < n; b++) {
-sum += array[b];
-best = max(best,sum);
-}
-}
 cout << best << "\n";
 ```
 
@@ -60,7 +60,7 @@ After this change, the time complexity is O(n²).
 ## Algorithm 3
 # Kadane's Algorithm
 
-![KA](img/Kadane Algorithm.jpeg)
+![Kadane Algorithm](https://github.com/G1Joshi/DSA/blob/patch-2/Kadane's%20Algorithm/img/Kadane%20Algorithm.jpeg)
 
 **Kadane's algorithm** scans the given *array* **A[1...n]** from left to right.
 In the ith step, it computes the *subarray* with the largest sum ending at i,
@@ -81,10 +81,10 @@ The following code implements the algorithm:
 int best = 0, sum = 0;
 
 for (int k = 0; k < n; k++) {
-
-sum = max(array[k],sum+array[k]);
-best = max(best,sum);
+    sum = max(array[k],sum+array[k]);
+    best = max(best,sum);
 }
+
 cout << best << "\n";
 ```
 
