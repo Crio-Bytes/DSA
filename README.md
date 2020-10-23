@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # Introduction
@@ -36,6 +36,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/archithdwij"><img src="https://avatars1.githubusercontent.com/u/30730368?v=4" width="100px;" alt=""/><br /><sub><b>Archithdwij</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/pulls?q=is%3Apr+reviewed-by%3Aarchithdwij" title="Reviewed Pull Requests">👀</a> <a href="#eventOrganizing-archithdwij" title="Event Organizing">📋</a></td>
     <td align="center"><a href="https://github.com/DivyaSaravanan"><img src="https://avatars2.githubusercontent.com/u/42182403?v=4" width="100px;" alt=""/><br /><sub><b>Divya_S</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=DivyaSaravanan" title="Code">💻</a> <a href="#content-DivyaSaravanan" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/verma-pulkit"><img src="https://avatars2.githubusercontent.com/u/55025041?v=4" width="100px;" alt=""/><br /><sub><b>Pulkit Verma</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=verma-pulkit" title="Code">💻</a> <a href="#content-verma-pulkit" title="Content">🖋</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/nitesh-thapliyal-4403a1135"><img src="https://avatars0.githubusercontent.com/u/53345517?v=4" width="100px;" alt=""/><br /><sub><b>Nitesh Thapliyal</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=Nitesh-thapliyal" title="Documentation">📖</a></td>
   </tr>
 </table>
 
