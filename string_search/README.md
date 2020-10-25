@@ -46,7 +46,8 @@ gcc strings.c
 ```
 After entering ```0```, the program generates a pattern demonstrating the best case time complexity. Here's a sample screenshot attached below showing the output.
 
-[](images/Activity1.jpg?raw=true)
+![](images/Activity1.jpg?raw=true)
+
 # Activity 2
 In this activity we will be demonstrating the average case time complexity of Rabin Karp and KMP algorithm. Average Case time complexity gives us an estimate for real/expected execution time. Rabin Karp and KMP algorithm achieve a linear time even in their average case time complexity.
 To execute our demonstration:
