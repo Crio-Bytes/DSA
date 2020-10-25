@@ -16,7 +16,8 @@
 #### Overview
 In this micro-byte, we will be going through the working of the two most famous string matching algorithms: Rabin Karp and KMP string matching algorithm. The speciality of both these algorithms is that they achieve linear time complexity for average case, making them far more superior to naive string matching algorithm which completes string matching in quadratic time for all cases.
 We start with understanding the working of each algorithm and then compare time taken by both algorithms in best/ average/ worst case scenarios. As an additional acitivity, readers can try out their own scenarios and compare time taken by both algorithms.
-![String Matching](images/string_match.png)
+
+![String Matching](https://www.globalsoftwaresupport.com/wp-content/uploads/2017/04/ezgif.com-crop.gif)
 #### Rabin Karp algorithm
 * The algorithm is named after Michael O. Rabin and Richard M. Karp.
 * Rabin Karp Algorithm utilizes string hashing, more precisely, rolling string hashing during its preprocessing step.
