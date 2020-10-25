@@ -39,22 +39,11 @@ int main(){
     char* pattern;
     int result_KMP;
     int result_RB;
-    //char algo_choice;
+
     long time_elapsed_nanos_KMP;
     long time_elapsed_nanos_RB;
     struct timespec vartime;
-    /*
-    srand(time(NULL));
-    int string_index = rand()%(STRING_COUNT);
-    
-    printf("------------------------\nSelect a algorithm\nRobin Karp Algorithm - 0\nKnuth Morris Prath Algorithm- 1\n------------------------\n\n");
-    scanf(" %c",&algo_choice);
 
-    if(algo_choice != '0' && algo_choice != '1'){
-        printf("Invalid Selection %c...exiting\n ",algo_choice);
-        exit(0);
-    }
-    */
     int (*algorithms[])(const char* text, const char* pattern) = {
         RabinKarp, KMP
     };
