@@ -1,17 +1,17 @@
 # Table of Contents
-* ##### Introduction
+* ##### Introduction[#Introduction]
     * Overview
     * Rabin Karp string matching algorithm
     * KMP string matching algorithm
-* ##### Activity 1 
+* ##### [Activity 1](#Activity 1) 
     * Best case complexity comparision
-* ##### Activity 2
+* ##### [Activity 2](#Activity 2)
     * Average case complexity comparision
-* ##### Activity 3
+* ##### [Activity 3](#Activity 3)
     * Worst case complexity comparision
-* ##### Activity 4
+* ##### [Activity 4](#Activity 4)
     * Custom input by user
-* ##### References
+* ##### [References](#References)
 # Introduction
 #### Overview
 In this micro-byte, we will be going through the working of the two most famous string matching algorithms: Rabin Karp and KMP string matching algorithm. The speciality of both these algorithms is that they achieve linear time complexity for average case, making them far more superior to naive string matching algorithm which completes string matching in quadratic time for all cases.
