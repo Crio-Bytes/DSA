@@ -37,7 +37,7 @@ We start with understanding the working of each algorithm and then compare time 
 **NOTE** Since pattern matching of strings is a simple task, execution time may vary at each run. To minimize this, we consider the default ```text_length``` to be 1000 and default ```pattern_length``` to be 100. Having longer input lengths can help reduce these variance and make comparison of the algorithms easier. Our demonstrations will only be showing the final time taken to execute each algorithm. For users interested in seeing the actual text and pattern and other data used in during development of this program, set ```DEBUG``` macro to ```1```
 # Activity 1
 For our first activity, we will be comparing the Rabin Karp algorithm and KMP algorithm in their best case time complexity. For users who are unfamiliar with the asymptotic time complexity notations, we recommend they first go through the asymptotic time complexities link in References below. To summarize, Best case complexity of an algorithm can be defined as least time taken to complete its execution. This is achieved in most optimal conditions.  
-**QUESTION** What do you think is the most optimal condition for a string matching algorithm ?
+**QUESTION** What do you think is the most optimal condition for a string matching algorithm ?  
 To execute our demonstration:
 ```
 gcc strings.c
@@ -65,7 +65,7 @@ For our third activity, we will be looking at the worst case time complexity of 
 * Worst Case complexity of Rabin Karp algorithm is O(n*m).
 * The Worst Case complexity of KMP algorithm is O(n+m).
 
-**QUESTION** What is the least optimal condition/ scenario which generates a worst case time complexity ?
+**QUESTION** What is the least optimal condition/ scenario which generates a worst case time complexity ?  
 To execute our demonstration:
 ```
 gcc strings.c
