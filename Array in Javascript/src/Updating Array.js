@@ -18,7 +18,7 @@ function Update(keyValue, newKey, newValue)
 //This method looks for an item in an array and returns the index where it was found else it returns -1
 
 let color = ['Orange', 'White', 'Blue', 7]
-color.indexOf('orange'); // returns 1
+color.indexOf('orange'); // returns 0
 color.indexOf(7); // returns 3
 color.indexOf(null); // returns -1 (not found)
 
