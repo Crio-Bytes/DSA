@@ -60,7 +60,7 @@ int main(){
                 get_text_pattern(text,pattern,0);
                 if(DEBUG){
                     printf("[0] Best Case\n");
-                    printf("%s\n%s\n",text,pattern);
+                    printf("TEXT = %s\n\nPATTERN = %s\n\n",text,pattern);
                 }
 
                 vartime = timer_start();
@@ -70,6 +70,8 @@ int main(){
                 result_KMP = algorithms[1](text, pattern);
                 time_elapsed_nanos_KMP = timer_end(vartime);
                 display_result(result_RB, time_elapsed_nanos_RB, result_KMP, time_elapsed_nanos_KMP);
+                free(text);  
+                free(pattern);
                 break;
             case '1':
                 text = (char*)malloc(sizeof(char)*(TEXT_LENGTH+1));
@@ -79,7 +81,7 @@ int main(){
                 get_text_pattern(text,pattern,1);
                 if(DEBUG){
                     printf("[1] Average Case\n");
-                    printf("%s\n%s\n",text,pattern);
+                    printf("TEXT = %s\n\nPATTERN = %s\n\n",text,pattern);
                 }
                 vartime = timer_start();
                 result_RB = algorithms[0](text, pattern);
@@ -88,6 +90,8 @@ int main(){
                 result_KMP = algorithms[1](text, pattern);
                 time_elapsed_nanos_KMP = timer_end(vartime);
                 display_result(result_RB, time_elapsed_nanos_RB, result_KMP, time_elapsed_nanos_KMP);
+                free(text);  
+                free(pattern);
                 break;
             case '2':
                 text = (char*)malloc(sizeof(char)*(TEXT_LENGTH+1));
@@ -97,7 +101,7 @@ int main(){
                 get_text_pattern(text,pattern,2);
                 if(DEBUG){
                     printf("[2] Worst Case\n");
-                    printf("%s\n%s\n",text,pattern);
+                    printf("TEXT = %s\n\nPATTERN = %s\n\n",text,pattern);
                 }
                 vartime = timer_start();
                 result_RB = algorithms[0](text, pattern);
@@ -106,6 +110,8 @@ int main(){
                 result_KMP = algorithms[1](text, pattern);
                 time_elapsed_nanos_KMP = timer_end(vartime);
                 display_result(result_RB, time_elapsed_nanos_RB, result_KMP, time_elapsed_nanos_KMP);
+                free(text);  
+                free(pattern);
                 break;
             case '3':
                 if(DEBUG){
@@ -121,6 +127,11 @@ int main(){
 
                 printf("\nEnter size of pattern\n");
                 scanf("%d",&m);
+                if(m > n){
+                    printf("Length of pattern cannot be longer than text\n");
+                    free(text);
+                    break;
+                }
                 pattern = (char*)malloc(sizeof(char)*(m+1));
 
                 printf("Enter pattern\n");
@@ -134,6 +145,8 @@ int main(){
                 result_KMP = algorithms[1](text, pattern);
                 time_elapsed_nanos_KMP = timer_end(vartime);
                 display_result(result_RB, time_elapsed_nanos_RB, result_KMP, time_elapsed_nanos_KMP);
+                free(text);  
+                free(pattern);
                 break;
             default: 
                 flag = 0;
@@ -141,8 +154,6 @@ int main(){
         }
         
     }
-    free(text);  
-    free(pattern);
     return 0;
 }
 void display_result(const int result_RB, const long time_elapsed_nanos_RB, const int result_KMP, const long time_elapsed_nanos_KMP){
@@ -180,10 +191,6 @@ void get_text_pattern(char* text, char* pattern, int c){
 }
 
 int RabinKarp(const char* text, const char* pattern){
-    if(DEBUG){
-        printf("[RabinKarp] text = %s\n",text);
-        printf("[RabinKarp] pattern = %s\n",pattern);
-    }
     int n = strlen(text);
     int m = strlen(pattern);
     int i;
@@ -200,6 +207,10 @@ int RabinKarp(const char* text, const char* pattern){
     for(i = 0; i < m; i++){
         p_hash = (p_hash*d + (int)pattern[i])%q;
         t_hash = (t_hash*d + (int)text[i])%q;
+    }
+    if(DEBUG){
+        printf("Hash value of pattern  = %llu\n",p_hash);
+        printf("Initial hash value of text = %llu\n",t_hash);
     }
     for(i = 0; i <= n-m; i++){
         if(p_hash == t_hash){
@@ -220,10 +231,6 @@ int RabinKarp(const char* text, const char* pattern){
     return -1;
 }
 int KMP(const char* text, const char* pattern){
-    if(DEBUG){
-        printf("[KMP] text = %s\n",text);
-        printf("[KMP] pattern = %s\n",pattern);
-    }
     int n = strlen(text);
     int m = strlen(pattern);
     if(m > n)
@@ -271,5 +278,12 @@ void computeLPS(const char* pattern, int m,int* lps){
                 i++;
             }
         }
+    }
+    if(DEBUG){
+        printf("Displaying suffix table\n");
+        for(i = 0; i < m; i++){
+            printf("%d ",lps[i]);
+        }
+        printf("\n");
     }
 }
