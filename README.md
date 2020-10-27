@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # Introduction
@@ -38,6 +38,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/verma-pulkit"><img src="https://avatars2.githubusercontent.com/u/55025041?v=4" width="100px;" alt=""/><br /><sub><b>Pulkit Verma</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=verma-pulkit" title="Code">💻</a> <a href="#content-verma-pulkit" title="Content">🖋</a></td>
     <td align="center"><a href="https://github.com/Sreejan-22"><img src="https://avatars3.githubusercontent.com/u/64251207?v=4" width="100px;" alt=""/><br /><sub><b>Sreejan-22</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=Sreejan-22" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/IamShubhamGupto"><img src="https://avatars2.githubusercontent.com/u/32878682?v=4" width="100px;" alt=""/><br /><sub><b>Shubham</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=IamShubhamGupto" title="Code">💻</a> <a href="#content-IamShubhamGupto" title="Content">🖋</a> <a href="#ideas-IamShubhamGupto" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Crio-Bytes/DSA/commits?author=IamShubhamGupto" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Janhavi-Gautam"><img src="https://avatars2.githubusercontent.com/u/72925384?v=4" width="100px;" alt=""/><br /><sub><b>Janhavi Gautam</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=Janhavi-Gautam" title="Code">💻</a></td>
   </tr>
 </table>
 
