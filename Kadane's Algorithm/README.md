@@ -8,6 +8,16 @@ For example, in the array
 
 ---
 
+### Some properties of this problem are:
+
+1. If the array contains all non-negative numbers, then the problem is trivial; a maximum subarray is the entire array.
+
+2. If the array contains all non-positive numbers, then a solution is any subarray of size 1 containing the maximal value of the array (or the empty subarray, if it is permitted).
+
+3. Several different sub-arrays may have the same maximum sum.
+
+---
+
 ## Algorithm 1
 
 A straightforward way to solve the problem is to go through all possible subarrays, calculate the sum of values in each subarray and maintain the maximum sum.<br>
@@ -105,3 +115,18 @@ In each test, the input was generated randomly. The time needed for reading the 
 | 10⁵ | >10.0 s | 5.3 s | 0.0 s |
 | 10⁶ | >10.0 s | >10.0 s | 0.0 s |
 | 10⁷ | >10.0 s | >10.0 s | 0.0 s |
+
+---
+
+## Applications
+
+- Genomic sequence analysis employs maximum subarray algorithms to identify important biological segments of protein sequences.
+
+- In computer vision, maximum-subarray algorithms are used on bitmap images to detect the brightest area in an image.
+
+---
+
+### References
+[Largest Sum Contiguous Subarray](https://www.google.com/amp/s/www.geeksforgeeks.org/largest-sum-contiguous-subarray/amp)<br>
+
+[Maximum subarray problem](https://en.m.wikipedia.org/wiki/Maximum_subarray_problem)
