@@ -145,6 +145,18 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "G1Joshi",
+      "name": "Jeevan Chandra Joshi",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/52780516?v=4",
+      "profile": "https://www.linkedin.com/in/G1Joshi",
+      "contributions": [
+        "code",
+        "content",
+        "ideas",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
