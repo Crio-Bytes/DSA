@@ -37,19 +37,45 @@ where ProgramName is the name of the program.
 
 
 # ACTIVITIES:
+
 ### ACTIVITY 1:
-## BUBBLE SORT
-Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+## SELECTION SORT
+How we get ourselves arranged for school assembly in height wise order - pick the smallest one and bringing him to start right? This is selection sort. That we select the smallest term and places it to is correct position.
+Selection sort is an algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
 
 The algorithm for this would be : <br/>
 
 #### ALGORITHM-1:
+**Selection sort**:
+>  1. Set MIN to location 0
+>  2. Search the minimum element in the list
+>  3. Swap with value at location MIN
+>  4. Increment MIN to point to next element
+>  5. Repeat until list is sorted
+
+[Flow Chart](images/SelectionSort.jpg) of Selection sort.
+
+Tip : To read more on selection sort [click here](https://www.geeksforgeeks.org/selection-sort/)
+
+This is implemented in [selectionSort](src/selectionSort.java). </br>
+
+Check the [Dry Run](images/SelectionSortDryRun.gif) of the Algorithm.
+
+### ACTIVITY 2:
+## BUBBLE SORT
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order. Bubble sort works similiar to selection sort except selection sort starts sorting by finding the mininum number whereas bubble sort sorts by finding the maximum number.
+
+The algorithm for this would be : <br/>
+
+#### ALGORITHM-2:
 **Bubble sort**:
->  1. traverse every element of the array.
->  2. swap adjacent elements if not sorted.
+>  1. Iterate over the unsorted array.
+>  2. If precessor of any number is larger swap the terms.
+>  3. Repeat the steps 1 and 2 till the complete array is sorted.
 
 This is implemented in [bubbleSort](src/bubbleSort.java). 
 
+-> Make sure to see [dry run](images/BubbleSortDryRun.gif) and [control flow](images/BubbleSort.PNG).
 
 Can you guess what the time and space complexity would be?
 
@@ -63,21 +89,24 @@ Time complexity is O(n^2) as we are traversing the array for every element and t
 
 Can you implement this Algorithm using recursion?
 
+Tip : Still have doubts about this algorithm? [Read more](https://www.tutorialspoint.com/data_structures_algorithms/bubble_sort_algorithm.htm) 
 
 <hr>
 
-### ACTIVITY 2:
+### ACTIVITY 3:
 ## INSERTION SORT
 Insertion sort uses the trick to arrange card of a deck. We pick a card arrange it in the required position and then move forward by picking another card. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
 
 
-#### ALGORTIHM-2
+#### ALGORTIHM-3
 **Insertion Sort**:
 > 1. Iterate over the array.
 > 2. Compare the current element (key) to its predecessor.
 > 3. If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for the swapped element.
 
 This algorithm is implemented in [this file](src/insertionSort.java).<br/>
+
+-> Make sure to see [dry run](images/InsertionSortDryRun.gif) and [control flow](images/InsertionSort.PNG).
 
 What should be the time complexity of this algorithm?
 </br>
@@ -89,9 +118,11 @@ The best Case time complexity would be O(n) when the complete array is sorted.
 Does this Algorithm use any extra space?</br>
 No, Hence space complexity is O(1).
 
+Tip : Make sure to check [this link](https://www.geeksforgeeks.org/insertion-sort/) to learn more about this algorithm.
+
 <hr>
 
-### ACTIVITY 3:
+### ACTIVITY 4:
 ## QUICK SORT
 QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot. There are many different versions of quickSort that pick pivot in different ways.</br>
 
@@ -103,7 +134,7 @@ The key process in quickSort is partition(). Target of partitions is, given an a
 
 </br>
 
-#### ALGORTIHM-3
+#### ALGORTIHM-4
 **Quick Sort**:
 > quickSort(arr[], low, high) </br>
 > { </br>
@@ -118,8 +149,15 @@ The key process in quickSort is partition(). Target of partitions is, given an a
 >    } </br>
 >} </br>
 
+Tip : To learn more about divide and conquer approach [click here](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/). To Know more about quick sort see [this](https://www.geeksforgeeks.org/quick-sort/).
 
 This algorithm is implemented in [this file](src/quickSort.java).
+
+For understanding the running loop see [this](images/QuickSortDryRun.gif)
+
+-> Can you try making the recursion tree? (check you answer [here](images/QuickSort.png)).
+
+
 
 **Time Complexity**
 1. Worst case: O(n^2)
@@ -127,9 +165,11 @@ This algorithm is implemented in [this file](src/quickSort.java).
 3. Best case: O(nLogn)
 
 **Space Complexity** : O(1)
+
+
 <hr>
 
-### ACTIVITY 4:
+### ACTIVITY 5:
 ## MERGE SORT
 We have looked into In-Place sorting so far. We will now discuss an external sorting technique. </br>
 Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is a key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one. 
@@ -146,7 +186,7 @@ If you could do it on your own then kudos, otherwise it is implemented in [this 
 
 Once you know how to merge two sorted array, implement the following algorithm-
 
-#### ALGORITHM 3:
+#### ALGORITHM 5:
 **Merge Sort**:
 > If r > l </br>
 >     1. Find the middle point to divide the array into two halves:  </br>
@@ -162,7 +202,12 @@ Once you know how to merge two sorted array, implement the following algorithm-
     
 
 Don't get intimidated by this algorithm,its not that hard :)
-This algorithm is implemented [here](src/mergeSort.java).
+This algorithm is implemented [here](src/mergeSort.java). Also make sure to understand the [working of code](images/MergeSortDryRun.gif).
+
+Make sure to draw the recursion Tree, if you couldn't [click here](images/mergeSort.PNG). 
+
+Tip : Don't feel like you are confident about this algorithm? Read [this](https://www.programiz.com/dsa/merge-sort).
+
 
 Can you find out the Space and Time Complexity?
 </br>
@@ -186,6 +231,19 @@ There are loads of sorting algorithms. Some of them are :
 and many many more !
 
 <hr>
+
+## Bravo! 
+It's amazing that you could learn all these sorting algorithms. Great work!</br>
+Since with all your dedication and hardwork you have reached till here so test what all you have learned.
+
+### QUESTIONS TO TEST YOUR KNOWLEDGE
+>1. Which Algorithm would you use to sort linked list?
+>2. Is quick sort a stable Algorithm?
+>3. Can you write a recursive code for selection sort?
+>4. What Algorithm is preffered to sort a large amount of data?
+>5. Which Algorithm is preffered to sort data with minimum time?
+>6. If a small amount of data is to be sorted, which algorithm should be used? 
+
 
 ## REFERENCES: <br/>
 https://www.geeksforgeeks.org/sorting-terminology/ <br/>
