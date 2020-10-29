@@ -26,21 +26,7 @@ For example, in the array
 A straightforward way to solve the problem is to go through all possible subarrays, calculate the sum of values in each subarray and maintain the maximum sum.<br>
 The following code implements this algorithm:
 
-```C++
-int best = 0;
-
-for (int a = 0; a < n; a++) {
-    for (int b = a; b < n; b++) {
-        int sum = 0;
-        for (int k = a; k <= b; k++) {
-            sum += array[k];
-        }
-        best = max(best,sum);
-    }
-}
-
-cout << best << "\n";
-```
+👉🏻 [Algorithm 1](https://github.com/G1Joshi/DSA/blob/patch-2/Kadane's%20Algorithm/src/Algorithm%201.cpp)
 
 The variables a and b fix the first and last index of the subarray, and the sum of values is calculated to the variable sum. The variable best contains the maximum sum found during the search.<br>
 The time complexity of the algorithm is O(n³), because it consists of three nested loops that go through the input.
@@ -52,19 +38,7 @@ The time complexity of the algorithm is O(n³), because it consists of three nes
 It is easy to make Algorithm 1 more efficient by removing one loop from it. This is possible by calculating the sum at the same time when the right end of the subarray moves.<br>
 The result is the following code:
 
-```C++
-int best = 0;
-
-for (int a = 0; a < n; a++) {
-    int sum = 0;
-    for (int b = a; b < n; b++) {
-        sum += array[b];
-        best = max(best,sum);
-    }
-}
-
-cout << best << "\n";
-```
+👉🏻 [Algorithm 2](https://github.com/G1Joshi/DSA/blob/patch-2/Kadane's%20Algorithm/src/Algorithm%202.cpp)
 
 After this change, the time complexity is O(n²).
 
@@ -72,19 +46,16 @@ After this change, the time complexity is O(n²).
 
 ## Algorithm 3
 
-The most optimal solution for obtaining the maximum sub-array is **Kadane’s algorithm**; it uses two variables:
-1. _current_maximum_ to keep track of whether or not the value at the current index would increase the maximum sum.
-2. _global_maximum_ to keep track of the overall maximum that is propagated along the array.
-
-## Kadane's Algorithm
-
-![Kadane Algorithm](https://github.com/G1Joshi/DSA/blob/patch-2/Kadane's%20Algorithm/img/Kadane%20Algorithm.jpeg)
-
+The most optimal solution for obtaining the maximum sub-array is **Kadane’s algorithm**;<br>
 **Kadane's algorithm** scans the given *array* **A[1...n]** from left to right.
 In the ith step, it computes the *subarray* with the largest sum ending at i,
 this sum is maintained in a variable **current_sum**.<br>
 Moreover, it computes the *subarray* with the largest sum anywhere in **A[1...j]** maintained in variable **global_sum**,
 and easily obtained as the maximum of all values of **current_sum** seen so far.
+
+## Kadane's Algorithm
+
+![Kadane Algorithm](https://github.com/G1Joshi/DSA/blob/patch-2/Kadane's%20Algorithm/img/Kadane%20Algorithm.jpeg)
 
 Surprisingly, it is possible to solve the problem in O(n) time, which means that just one loop is enough. The idea is to calculate, for each array position, the maximum sum of a subarray that ends at that position. After this, the answer for the problem is the maximum of those sums. Consider the subproblem of finding the maximum-sum subarray that ends at position k.
 
@@ -94,25 +65,20 @@ There are two possibilities:
 
 In the latter case, since we want to find a subarray with maximum sum, the subarray that ends at position k −1 should also have the maximum sum. Thus, we can solve the problem efficiently by calculating the maximum subarray sum for each ending position from left to right.<br>
 
+Kadane's Algorithm uses two variables:
+1. _current_maximum_ to keep track of whether or not the value at the current index would increase the maximum sum.
+2. _global_maximum_ to keep track of the overall maximum that is propagated along the array.
+
 ### Algorithm
 - Set both of the above-mentioned variables to the value at the first index, i.e., arr[0].
-- For the next index i, store the maximum of _current_maximum_ and _current_maximum_ + arr[i] in current_maximum itself.
-- Store the maximum of _global_maximum_ and current_maximum in _global_maximum_.
+- For the next index i, store the maximum of _current_maximum_ and _current_maximum_ + arr[i] in _current_maximum_ itself.
+- Store the maximum of _global_maximum_ and _current_maximum_ in _global_maximum_.
 - Repeat the above two steps for the remaining indices.
 - Return the value of _global_maximum_.
 
 The following code implements the algorithm:
 
-```C++
-int best = 0, sum = 0;
-
-for (int k = 0; k < n; k++) {
-    sum = max(array[k],sum+array[k]);
-    best = max(best,sum);
-}
-
-cout << best << "\n";
-```
+👉🏻 [Kadane's Algorithm](https://github.com/G1Joshi/DSA/blob/patch-2/Kadane's%20Algorithm/src/Kadane's%20Algorithm.cpp)
 
 The algorithm only contains one loop that goes through the input, so the time complexity is O(n). This is also the best possible time complexity, because any algorithm for the problem has to examine all array elements at least once.
 
