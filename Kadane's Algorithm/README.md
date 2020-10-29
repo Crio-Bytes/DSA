@@ -1,19 +1,22 @@
 # Maximum Sub-Array Sum
 
+## Introduction
+The maximum sum subarray problem is the task of finding a contiguous subarray with the largest sum, within a given one-dimensional array A[1...n] of numbers.
+
+## History
+The maximum subarray problem was proposed by Ulf Grenander in 1977 as a simplified model for maximum likelihood estimation of patterns in digitized images.
+
+## Problem Statement
 Given an array of n numbers, our task is to calculate the maximum subarray sum, i.e., the largest possible sum of a sequence of consecutive values in the
 array.<br>
 For example, in the array
 
 ![Maximum Subarray Sum](https://github.com/G1Joshi/DSA/blob/patch-2/Kadane's%20Algorithm/img/Maximum%20Subarray%20Sum.png)
 
----
-
 ### Some properties of this problem are:
 
 1. If the array contains all non-negative numbers, then the problem is trivial; a maximum subarray is the entire array.
-
 2. If the array contains all non-positive numbers, then a solution is any subarray of size 1 containing the maximal value of the array (or the empty subarray, if it is permitted).
-
 3. Several different sub-arrays may have the same maximum sum.
 
 ---
@@ -68,7 +71,12 @@ After this change, the time complexity is O(n²).
 ---
 
 ## Algorithm 3
-# Kadane's Algorithm
+
+The most optimal solution for obtaining the maximum sub-array is **Kadane’s algorithm**; it uses two variables:
+1. _current_maximum_ to keep track of whether or not the value at the current index would increase the maximum sum.
+2. _global_maximum_ to keep track of the overall maximum that is propagated along the array.
+
+## Kadane's Algorithm
 
 ![Kadane Algorithm](https://github.com/G1Joshi/DSA/blob/patch-2/Kadane's%20Algorithm/img/Kadane%20Algorithm.jpeg)
 
@@ -85,6 +93,14 @@ There are two possibilities:
 2. The subarray consists of a subarray that ends at position k −1, followed by the element at position k.
 
 In the latter case, since we want to find a subarray with maximum sum, the subarray that ends at position k −1 should also have the maximum sum. Thus, we can solve the problem efficiently by calculating the maximum subarray sum for each ending position from left to right.<br>
+
+### Algorithm
+- Set both of the above-mentioned variables to the value at the first index, i.e., arr[0].
+- For the next index i, store the maximum of _current_maximum_ and _current_maximum_ + arr[i] in current_maximum itself.
+- Store the maximum of _global_maximum_ and current_maximum in _global_maximum_.
+- Repeat the above two steps for the remaining indices.
+- Return the value of _global_maximum_.
+
 The following code implements the algorithm:
 
 ```C++
@@ -121,12 +137,13 @@ In each test, the input was generated randomly. The time needed for reading the 
 ## Applications
 
 - Genomic sequence analysis employs maximum subarray algorithms to identify important biological segments of protein sequences.
-
 - In computer vision, maximum-subarray algorithms are used on bitmap images to detect the brightest area in an image.
 
 ---
 
 ### References
-[Largest Sum Contiguous Subarray](https://www.google.com/amp/s/www.geeksforgeeks.org/largest-sum-contiguous-subarray/amp)<br>
 
-[Maximum subarray problem](https://en.m.wikipedia.org/wiki/Maximum_subarray_problem)
+- [Largest Sum Contiguous Subarray](https://www.google.com/amp/s/www.geeksforgeeks.org/largest-sum-contiguous-subarray/amp)<br>
+- [Maximum subarray problem](https://en.m.wikipedia.org/wiki/Maximum_subarray_problem)
+- [Kadane's Algorithm](https://codeforces.com/blog/entry/13713?mobile=false)
+- [The maximum sub-array sum problem](https://www.educative.io/edpresso/the-maximum-sub-array-sum-problem)
