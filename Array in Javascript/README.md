@@ -251,6 +251,60 @@ Time complexity: O(log n)
 
 </details>
 
+### ACTIVITY 4:
+## Transform an array
+Here are some very useful methods that transform and reorder an array:
+### 1. sort()
+array.sort() sorts the array in place, changing its element order. It also returns the sorted array but the returned array is usually as the array itself is modified. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+
+```
+let arr = [3, 6, 5, 23, 11];
+arr.sort();
+
+```
+Try printing `arr` in the console after writing the piece of code given above. Did you notice something strange? Well there is nothing wrong there. By default the numbers are
+converted into strings and they are compared according to the lexicographical order. To sort the array in our desired order we need to supply a function as an argument of arr.sort().
+
+So the template would be something like this: 
+```
+function compare(a, b) {
+   // todo: complete this function
+}
+arr.sort(compare);
+```
+### Todo: 
+Complete the function for two cases: ascending order and descending order
+
+### 2. map()
+array.map() calls the function for each element of the array and returns the array of results.
+
+```
+let arr1 = [4, 8, 2, 14, 6];
+let arr2 = arr1.map(x => x/2);
+// arr2: [2,4,1,7,3]
+```
+### Todo: 
+Use the map method to transform each element of an array into its length. 
+e.g. Input: ["cat", "wolf", "tiger"]
+     Output: [3, 4, 5]
+(The operation should be in-place - don't store results in a different array)
+
+### Micro-Challenge
+Write a function that gets an array of objects (containing "name" and "age" properties) and sorts them by age.
+
+```
+let sam = { name: "Sam", age: 29 }
+let tom = { name: "Tom", age: 56 };
+let rose = { name: "Rose", age: 22 };
+let arr = [sam, tom, rose];
+
+function sortByAge(arr) {
+     // complete this function
+}
+
+// arr: [rose, sam, tom]
+```
+
 # Summary
 We just learned most common operations of array and their runtimes. Amazing right? now we can go ahead, do further excercise.
 Congo on completing this MicroByte!  Don't forget to add your solutions.
@@ -262,4 +316,6 @@ Congo on completing this MicroByte!  Don't forget to add your solutions.
 - [MDN Web Docs: Unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 - [MDN Web Docs: Shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 - https://stackoverflow.com/questions/9425009/remove-multiple-elements-from-array-in-javascript-jquery
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+- [MDN Web Docs: Slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+- [MDN Web Docs: Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [MDN Web Docs: Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
