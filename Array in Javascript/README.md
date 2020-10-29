@@ -280,7 +280,9 @@ array.map() calls the function for each element of the array and returns the arr
 
 ```
 let arr1 = [4, 8, 2, 14, 6];
-let arr2 = arr1.map(x => x/2);
+let arr2 = arr1.map(x => x/2); 
+// an arrow function has been used here
+// to know more about arrow functions check the reference section
 // arr2: [2,4,1,7,3]
 ```
 ### Todo: 
@@ -315,7 +317,8 @@ Congo on completing this MicroByte!  Don't forget to add your solutions.
 - [MDN Web Docs: Splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 - [MDN Web Docs: Unshift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 - [MDN Web Docs: Shift](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
-- https://stackoverflow.com/questions/9425009/remove-multiple-elements-from-array-in-javascript-jquery
+- [StackOverflow: Remove multiple elements from array](https://stackoverflow.com/questions/9425009/remove-multiple-elements-from-array-in-javascript-jquery)
 - [MDN Web Docs: Slice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 - [MDN Web Docs: Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [MDN Web Docs: Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- [MDN Web Docs: Arrow Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
