@@ -233,10 +233,10 @@ Can you find out the Space and Time Complexity?
 
 ### Further exploration:
 There are loads of sorting algorithms. Some of them are :
-1. Radix Sort
-2. Shell sort
-3. Heap sort
-4. Selection Sort <br/>
+1. [Radix Sort](https://www.geeksforgeeks.org/radix-sort/)
+2. [Shell sort](https://www.geeksforgeeks.org/shellsort/?ref=lbp)
+3. [Heap sort](https://www.geeksforgeeks.org/heap-sort/?ref=lbp)
+4. [Counting Sort](https://www.geeksforgeeks.org/counting-sort/?ref=lbp) <br/>
 and many many more !
 
 <hr>
