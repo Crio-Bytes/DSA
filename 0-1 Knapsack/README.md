@@ -2,6 +2,9 @@
 0-1 Knapsack is a classic Dynamic Programming problem. If haven't yet studied DP do give this a read: [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/) 
 In this Mirco-Byte we will focus on how this concept can be extended to solve other DP problems having similar patterns.
 
+## Prerequisites 
+Basic programming, arrays, recursion, basic knowledge of algorithms including time and space complexity
+
 **Problem Statement:** 
 Given weights and values of `n` items, put these items in a knapsack of capacity `w` to get the maximum total value in the knapsack. Note that we are allowed to have only one quantity of each item.
 
@@ -13,15 +16,24 @@ For example -
 ![alt text](https://www.geeksforgeeks.org/wp-content/uploads/knapsack-problem-660x285.png)
 
 **Solution:**
-Generally there are two approaches to solving a DP problem: top-down and bottom-up. For this problem the top-down approach would be via recursion followed by memoization to optimize it. 
+Generally there are two approaches to solving a DP problem: top-down and bottom-up. For this problem the top-down approach would be via recursion followed by memoization to optimize it. To read more about both the approaches refer this link: [Top Down and Bottom Up approaches](https://www.geeksforgeeks.org/tabulation-vs-memoization/)
 
 **Todo:** Find out the pros and cons of both the approaches. 
 
 **Top-Down Method**
 
-Approach: Consider all subsets of items and calculate the total weight and value of all subsets. Consider the only subsets whose total weight is smaller than W. From all such subsets, pick the maximum value subset.
+Approach: Consider all subsets of items and calculate the total weight and value of all subsets. Consider the only subsets whose total weight is smaller than W. From all such subsets, pick the maximum value subset. To consider all subsets of items, there can be two cases for every item.
 
-Code:
+Case 1: The item is included in the optimal subset.
+
+Case 2: The item is not included in the optimal set.
+
+Therefore, the maximum value that can be obtained from ‘n’ items is the max of the following two values: 1. Maximum value obtained by n-1 items and w weight (excluding nth item). 2. Value of nth item plus maximum value obtained by n-1 items and w minus the weight of the nth item (including nth item).
+
+Try it youself and if you get stuck you can check the code given below
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
 
 ```
 int knapsack(wt[], int val[], int w, int n) {
@@ -42,7 +54,9 @@ int knapsack(wt[], int val[], int w, int n) {
 }
 ```
 
-**Todo:** Calculate the time and space complexity for the above the method.
+</details>
+
+**Todo:** Calculate the time and space complexity for the above the method.(Hint: Try drawing the recursion tree. We are actually checking all possible subsequences of the array. Now what do you think should the time complexity be?)
 
 ### Micro-Challenge:
 Write down the memoized version of the above program.
@@ -54,13 +68,17 @@ Like other typical Dynamic Programming(DP) problems, recomputations of same subp
 Approach: Take a 2D array of dimension n+1 by w+1(Why include 'n' and 'w'? Hint: Observe values of which parameters get modified in each function call in the Top-Down approach).
  The rows correspond to the items (elements from 0th index to (n-1)th index in the original array and also includes the possibility of zero items) and the columns correspond to the value of w (from 0 to w). Now why 0 to w? Try to figure out how to build the solution from its subproblems. So in this approach you are asked to figure what would have been the answer if value of 'w' was 0 and then 1 and so on. The key is to understand how we are storing the solutions to subproblems in the cells of the matrix so that we can compute the solution to the entire problem. In this case each cell in the matrix, say (x,y), gives us the maximum subset sum of `val` if `val` consisted of the first x elements of the original array and the total maximum weight allowed was y.
  
- Code
+Try it youself and if you get stuck you can check the code given below
+
+<details>
+<summary>CLICK TO SEE SOLUTION</summary>
  
  ```
  int knapsack(int wt[], int val[], int w, int n) {
     int dp[n+1][w+1];
     
     for(int i = 0;i <= n;i++) {
+      for(int j = 0; j <= w;j++) {
         // in case there are zero elements or maximum allowed weight is zero
         if(i == 0 || j == 0) {
             dp[i][j] = 0;
@@ -73,10 +91,15 @@ Approach: Take a 2D array of dimension n+1 by w+1(Why include 'n' and 'w'? Hint:
         else {
             dp[i][j] = dp[i-1][j];
         }
+      }
     }
     return dp[n][w];
 }
  ```
+ 
+ </details>
+ 
+ **Todo:** Calculate the time and space complexity for the above the method. (Hint: We are traversing a 2D array of dimensions already mentioned before. Now what do you think should be the time complexity? Have we used any extra space?)
  
  Now we will see how the above given concepts can be utilised to solve other DP problems having similar patterns.(Note that we won't discuss the top down approach)
  
@@ -132,7 +155,7 @@ Problem: Given an array arr[] of length n and an integer x, the task is to find 
    
    subsets - {1, 2, 3}, {1, 2, 3}, {3, 3}
 
-Note that if are able to solve the subset sum problem, you should ideally be able to solve this one too. The only difference is that here you have to find out the total number of subsets each of whose sum equal to x, instead of just finding whether such a sum exists or not.
+Note that if you are able to solve the subset sum problem, you should ideally be able to solve this one too. The only difference is that here you have to find out the total number of subsets each of whose sum equal to x, instead of just finding whether such a sum exists or not.
 
 ### Micro-Challenge: 
 Write the solution for the above problem in your preferred programming language(bottom-up approach). Also find out its time and space complexity.
