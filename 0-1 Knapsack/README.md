@@ -30,6 +30,22 @@ Case 2: The item is not included in the optimal set.
 
 Therefore, the maximum value that can be obtained from ‘n’ items is the max of the following two values: 1. Maximum value obtained by n-1 items and w weight (excluding nth item). 2. Value of nth item plus maximum value obtained by n-1 items and w minus the weight of the nth item (including nth item).
 
+Let’s visualize for for the following data:
+```
+val  wt
+6    15 
+6    5 
+5    6 
+6    4 
+6    6 
+3    5 
+7    2 
+
+w = 15
+```
+
+![alt text](https://qphs.fs.quoracdn.net/main-qimg-a0276875d1a3e898d54a3927a82b1ccb)
+
 Try it youself and if you get stuck you can check the code given below
 
 <details>
@@ -98,6 +114,8 @@ Try it youself and if you get stuck you can check the code given below
  ```
  
  </details>
+ 
+ If want to visualize the bottom-up approach you can follow this link: [Knapsack Problem Visualization](https://algorithm-visualizer.org/dynamic-programming/knapsack-problem)
  
  **Todo:** Calculate the time and space complexity for the above the method. (Hint: We are traversing a 2D array of dimensions already mentioned before. Now what do you think should be the time complexity? Have we used any extra space?)
  
@@ -189,3 +207,4 @@ dynamic programming is concerned, finding patterns and identifying how to build 
 - [GFG - Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/)
 - [GFG - 0-1 Knapsack](https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/)
 - [Aditya Verma - Youtube Channel - DP Playlist](https://www.youtube.com/watch?v=nqowUJzG-iM&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go)
+- [Knapsack Problem Visualization](https://algorithm-visualizer.org/dynamic-programming/knapsack-problem)
