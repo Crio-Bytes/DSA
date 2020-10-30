@@ -184,6 +184,7 @@ Merge Sort is a Divide and Conquer algorithm. It divides the input array into tw
 * Do you know how to merge 2 sorted arrays? </br>
 Think and give it a try!
 </br>
+
 If you could do it on your own then kudos, otherwise it is implemented in [this file](src/merge.java).
 
 
