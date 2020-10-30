@@ -53,29 +53,29 @@ The algorithm for this would be : <br/>
 >  4. Increment MIN to point to next element
 >  5. Repeat until list is sorted
 
-[Flow Chart](images/SelectionSort.jpg) of Selection sort.
+![Dry Run](images/SelectionSortDryRun.gif)
 
 Tip : To read more on selection sort [click here](https://www.geeksforgeeks.org/selection-sort/)
 
 This is implemented in [selectionSort](src/selectionSort.java). </br>
 
-Check the [Dry Run](images/SelectionSortDryRun.gif) of the Algorithm.
 
 ### ACTIVITY 2:
 ## BUBBLE SORT
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order. Bubble sort works similiar to selection sort except selection sort starts sorting by finding the mininum number whereas bubble sort sorts by finding the maximum number.
+
+![Dry Run](images/BubbleSortDryRun.gif)
 
 The algorithm for this would be : <br/>
 
 #### ALGORITHM-2:
 **Bubble sort**:
 >  1. Iterate over the unsorted array.
->  2. If precessor of any number is larger swap the terms.
+>  2. If predecessor of any number is larger swap the terms.
 >  3. Repeat the steps 1 and 2 till the complete array is sorted.
 
 This is implemented in [bubbleSort](src/bubbleSort.java). 
 
--> Make sure to see [dry run](images/BubbleSortDryRun.gif) and [control flow](images/BubbleSort.PNG).
 
 Can you guess what the time and space complexity would be?
 
@@ -97,6 +97,7 @@ Tip : Still have doubts about this algorithm? [Read more](https://www.tutorialsp
 ## INSERTION SORT
 Insertion sort uses the trick to arrange card of a deck. We pick a card arrange it in the required position and then move forward by picking another card. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
 
+![Dry Run](images/InsertionSortDryRun.gif)
 
 #### ALGORTIHM-3
 **Insertion Sort**:
@@ -106,7 +107,6 @@ Insertion sort uses the trick to arrange card of a deck. We pick a card arrange 
 
 This algorithm is implemented in [this file](src/insertionSort.java).<br/>
 
--> Make sure to see [dry run](images/InsertionSortDryRun.gif) and [control flow](images/InsertionSort.PNG).
 
 What should be the time complexity of this algorithm?
 </br>
@@ -134,6 +134,8 @@ The key process in quickSort is partition(). Target of partitions is, given an a
 
 </br>
 
+![Dry Run](images/QuickSortDryRun.gif)
+
 #### ALGORTIHM-4
 **Quick Sort**:
 > quickSort(arr[], low, high) </br>
@@ -153,7 +155,6 @@ Tip : To learn more about divide and conquer approach [click here](https://www.g
 
 This algorithm is implemented in [this file](src/quickSort.java).
 
-For understanding the running loop see [this](images/QuickSortDryRun.gif)
 
 -> Can you try making the recursion tree? (check you answer [here](images/QuickSort.png)).
 
@@ -184,6 +185,7 @@ If you could do it on your own then kudos, otherwise it is implemented in [this 
 <br/>
 <br/>
 
+![Dry Run](images/MergeSortDryRun.gif)
 Once you know how to merge two sorted array, implement the following algorithm-
 
 #### ALGORITHM 5:
@@ -202,9 +204,10 @@ Once you know how to merge two sorted array, implement the following algorithm-
     
 
 Don't get intimidated by this algorithm,its not that hard :)
-This algorithm is implemented [here](src/mergeSort.java). Also make sure to understand the [working of code](images/MergeSortDryRun.gif).
+This algorithm is implemented [here](src/mergeSort.java).
 
-Make sure to draw the recursion Tree, if you couldn't [click here](images/mergeSort.PNG). 
+Recursion Tree :
+![Recursion Tree](images/mergeSort.PNG)
 
 Tip : Don't feel like you are confident about this algorithm? Read [this](https://www.programiz.com/dsa/merge-sort).
 
@@ -244,6 +247,8 @@ Since with all your dedication and hardwork you have reached till here so test w
 >5. Which Algorithm is preffered to sort data with minimum time?
 >6. If a small amount of data is to be sorted, which algorithm should be used? 
 
+
+-> Don't Forget to submit your answers in the answers folder. Go ahead and post your soltuions there.(If you aren't familier with the working of PR read [this](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request))
 
 ## REFERENCES: <br/>
 https://www.geeksforgeeks.org/sorting-terminology/ <br/>
