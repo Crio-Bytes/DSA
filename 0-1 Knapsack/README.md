@@ -81,8 +81,10 @@ Write down the memoized version of the above program.
 
 Like other typical Dynamic Programming(DP) problems, recomputations of same subproblems can be avoided by constructing a temporary array in bottom-up manner.
 
-Approach: Take a 2D array of dimension n+1 by w+1(Why include 'n' and 'w'? Hint: Observe values of which parameters get modified in each function call in the Top-Down approach).
- The rows correspond to the items (elements from 0th index to (n-1)th index in the original array and also includes the possibility of zero items) and the columns correspond to the value of w (from 0 to w). Now why 0 to w? Try to figure out how to build the solution from its subproblems. So in this approach you are asked to figure what would have been the answer if value of 'w' was 0 and then 1 and so on. The key is to understand how we are storing the solutions to subproblems in the cells of the matrix so that we can compute the solution to the entire problem. In this case each cell in the matrix, say (x,y), gives us the maximum subset sum of `val` if `val` consisted of the first x elements of the original array and the total maximum weight allowed was y.
+Approach: 
+- Take a 2D array of dimension n+1 by w+1(Why include 'n' and 'w'? Hint: Observe values of which parameters get modified in each function call in the Top-Down approach).
+- The rows correspond to the items (elements from 0th index to (n-1)th index in the original array and also includes the possibility of zero items) and the columns correspond to   the value of w (from 0 to w). 
+- Now why 0 to w? Try to figure out how to build the solution from its subproblems. Here you are asked to figure what would have been the answer if value of 'w' was 0 and then 1   and so on. The key is to understand how we are storing the solutions to subproblems in the cells of the matrix so that we can compute the solution to the entire problem. In     this case each cell in the matrix, say (x,y), gives us the maximum subset sum of 'val' if 'val' consisted of the first x elements of the original array and the total maximum     weight allowed was y.
  
 Try it youself and if you get stuck you can check the code given below
 
