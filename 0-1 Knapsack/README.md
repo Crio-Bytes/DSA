@@ -160,7 +160,7 @@ Note that if you are able to solve the subset sum problem, you should ideally be
 ### Micro-Challenge: 
 Write the solution for the above problem in your preferred programming language(bottom-up approach). Also find out its time and space complexity.
 
-# Activity 3: Minimum subset sum difference
+# Activity 4: Minimum subset sum difference
 
 Problem: Given a set of integers, the task is to divide it into two sets s1 and s2 such that the absolute difference between their sums is minimum. For example- 
 
@@ -176,6 +176,11 @@ Now that you got the idea of how to approach the problem what's stopping you fro
 
 ### Micro-Challenge: 
 Write the solution for the above problem in your preferred programming language(bottom-up approach). Also find out its time and space complexity.
+
+### Bonus Challenges: 
+1. [Target Sum](https://leetcode.com/problems/target-sum/)
+2. [Equal Average Partition](https://www.geeksforgeeks.org/partition-an-array-of-non-negative-integers-into-two-subsets-such-that-average-of-both-the-subsets-is-equal/)
+3. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 Now that you have got a hang of how to solve problems related to the 0-1 Knapsack problem, try finding other problems having similar patterns and start solving because as far as 
 dynamic programming is concerned, finding patterns and identifying how to build a solution from subproblems is the key.
