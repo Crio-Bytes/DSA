@@ -156,7 +156,12 @@ Tip : To learn more about divide and conquer approach [click here](https://www.g
 This algorithm is implemented in [this file](src/quickSort.java).
 
 
--> Can you try making the recursion tree? (check you answer [here](images/QuickSort.png)).
+-> Can you try making the recursion tree?
+
+Don't give up too soon! </br> </br> </br>
+Once you done verify your anser with the help of following
+![recursion Tree](images/QuickSort.png)
+
 
 
 
@@ -253,6 +258,7 @@ Since with all your dedication and hardwork you have reached till here so test w
 ## REFERENCES: <br/>
 https://www.geeksforgeeks.org/sorting-terminology/ <br/>
 https://www.geeksforgeeks.org/time-complexities-of-all-sorting-algorithms/?ref=leftbar-rightbar </br>
+
 ## SUMMARY:
 I believe that you are now relatively comfortable with the sorting algorithms and you can implement these.<br/>
 For the things we have to learn before we can do them, we learn by doing them. </br>
