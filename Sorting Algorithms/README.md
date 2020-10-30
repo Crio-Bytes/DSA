@@ -185,7 +185,7 @@ If you could do it on your own then kudos, otherwise it is implemented in [this 
 <br/>
 <br/>
 
-![Dry Run](images/MergeSortDryRun.gif)
+![Dry Run](images/MergeSortDryRun.gif) </br>
 Once you know how to merge two sorted array, implement the following algorithm-
 
 #### ALGORITHM 5:
