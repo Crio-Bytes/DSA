@@ -1,10 +1,11 @@
 # Introduction
-0-1 Knapsack is a classic Dynamic Programming problem. If haven't yet studied DP do give this a read: [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/) 
+0-1 Knapsack is a classic Dynamic Programming problem. If you haven't yet studied DP do give this a read: [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/) 
+
 In this Mirco-Byte we will focus on how this concept can be extended to solve other DP problems having similar patterns.
 
-## Prerequisites 
-Basic programming, arrays, recursion, basic knowledge of algorithms including time and space complexity
+**Prerequisites:** Basic programming, arrays, recursion, basic knowledge of algorithms including time and space complexity
 
+### 0-1 Knapsack Problem
 **Problem Statement:** 
 Given weights and values of `n` items, put these items in a knapsack of capacity `w` to get the maximum total value in the knapsack. Note that we are allowed to have only one quantity of each item.
 
@@ -22,7 +23,7 @@ Generally there are two approaches to solving a DP problem: top-down and bottom-
 
 **Top-Down Method**
 
-Approach: Consider all subsets of items and calculate the total weight and value of all subsets. Consider the only subsets whose total weight is smaller than W. From all such subsets, pick the maximum value subset. To consider all subsets of items, there can be two cases for every item.
+**Approach:** Consider all subsets of items and calculate the total weight and value of all subsets. Consider the only subsets whose total weight is smaller than W. From all such subsets, pick the maximum value subset. To consider all subsets of items, there can be two cases for every item.
 
 Case 1: The item is included in the optimal subset.
 
@@ -81,7 +82,7 @@ Write down the memoized version of the above program.
 
 Like other typical Dynamic Programming(DP) problems, recomputations of same subproblems can be avoided by constructing a temporary array in bottom-up manner.
 
-Approach: 
+**Approach:** 
 - Take a 2D array of dimension n+1 by w+1(Why include 'n' and 'w'? Hint: Observe values of which parameters get modified in each function call in the Top-Down approach).
 - The rows correspond to the items (elements from 0th index to (n-1)th index in the original array and also includes the possibility of zero items) and the columns correspond to   the value of w (from 0 to w). 
 - Now why 0 to w? Try to figure out how to build the solution from its subproblems. Here you are asked to figure what would have been the answer if value of 'w' was 0 and then 1   and so on. The key is to understand how we are storing the solutions to subproblems in the cells of the matrix so that we can compute the solution to the entire problem. In     this case each cell in the matrix, say (x,y), gives us the maximum subset sum of 'val' if 'val' consisted of the first x elements of the original array and the total maximum     weight allowed was y.
@@ -121,11 +122,11 @@ Try it youself and if you get stuck you can check the code given below
  
  **Todo:** Calculate the time and space complexity for the above the method. (Hint: We are traversing a 2D array of dimensions already mentioned before. Now what do you think should be the time complexity? Have we used any extra space?)
  
- Now we will see how the above given concepts can be utilised to solve other DP problems having similar patterns.(Note that we won't discuss the top down approach)
+ Now we will see how the above given concepts can be utilised to solve other DP problems having similar patterns (note that we won't discuss the top down approach from now on).
  
  # Activity 1: Subset Sum Problem
  
- Problem: Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum. For example
+ **Problem:** Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum. For example
  
  1. input: arr[] = {2, 3, 7, 8, 10}, 
              sum = 11, 
@@ -150,7 +151,7 @@ Write the solution for the above problem in your preferred programming language(
 
 # Activity 2: Equal Sum Partition Problem
 
-Problem: Determine whether a given set can be partitioned into two subsets such that the sum of elements in both subsets is the same. For example-
+**Problem:** Determine whether a given set can be partitioned into two subsets such that the sum of elements in both subsets is the same. For example-
 
 1. input: arr[] = {1, 5, 11, 5}, 
    output: true, 
@@ -168,7 +169,7 @@ Write the solution for the above problem in your preferred programming language(
 
 # Activity 3: Count of subsets with a given sum
 
-Problem: Given an array arr[] of length n and an integer x, the task is to find the number of subsets with sum equal to x. For example- 
+**Problem:** Given an array arr[] of length n and an integer x, the task is to find the number of subsets with sum equal to x. For example- 
 
 1. input: arr[] = {1, 2, 3, 3}, sum = 6, 
    output: 3
@@ -182,7 +183,7 @@ Write the solution for the above problem in your preferred programming language(
 
 # Activity 4: Minimum subset sum difference
 
-Problem: Given a set of integers, the task is to divide it into two sets s1 and s2 such that the absolute difference between their sums is minimum. For example- 
+**Problem:** Given a set of integers, the task is to divide it into two sets s1 and s2 such that the absolute difference between their sums is minimum. For example- 
 
 1. input: arr[] = {1, 6, 11, 5}, 
    output: 1
@@ -190,9 +191,9 @@ Problem: Given a set of integers, the task is to divide it into two sets s1 and 
    [ s1 = {1, 5, 6} => sum = 12, s2 = {11} => sum = 11 so diff = 1] 
 
 This is a slightly complex one. But don't get intimidated. What I want you to realise is that you need to find out the possible subset sums (here there is no given "sum" - think about what should be taken as the value of "sum"; hint- it's hidden in this explanation itself). You don't really need to think about subset sum pairs as long as the subset sum 
-is less than or equal to the sum of all elements in the array as the sum of the remaining elements would form other the other half of the pair (partitioning the total sum into a pair of subset sums). After this all you need to do is find the pair which has minimum difference of sums (if you unable to comprehend refer the example given above). 
+is less than or equal to the sum of all elements in the array as the sum of the remaining elements would form other the other half of the pair (partitioning the total sum into a pair of subset sums). After this all you need to do is find the pair which has minimum difference of sums (if you are unable to comprehend refer the example given above). 
 
-Now that you got the idea of how to approach the problem what's stopping you from giving it a try.
+Now that you got an idea how to approach the problem, what's stopping you from giving it a try.
 
 ### Micro-Challenge: 
 Write the solution for the above problem in your preferred programming language(bottom-up approach). Also find out its time and space complexity.
@@ -203,7 +204,7 @@ Write the solution for the above problem in your preferred programming language(
 3. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 Now that you have got a hang of how to solve problems related to the 0-1 Knapsack problem, try finding other problems having similar patterns and start solving because as far as 
-dynamic programming is concerned, finding patterns and identifying how to build a solution from subproblems is the key.
+dynamic programming is concerned, identifying patterns and finding out how to build a solution from subproblems is the key.
 
 ### References:
 - [GFG - Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/)
