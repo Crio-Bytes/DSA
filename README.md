@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # Introduction
@@ -43,6 +43,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/TheShubham-K"><img src="https://avatars0.githubusercontent.com/u/52125841?v=4" width="100px;" alt=""/><br /><sub><b>Shubham Kumar</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=TheShubham-K" title="Code">💻</a> <a href="#content-TheShubham-K" title="Content">🖋</a></td>
+    <td align="center"><a href="https://github.com/divya1509"><img src="https://avatars3.githubusercontent.com/u/49750052?v=4" width="100px;" alt=""/><br /><sub><b>Divya</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=divya1509" title="Code">💻</a> <a href="https://github.com/Crio-Bytes/DSA/commits?author=divya1509" title="Documentation">📖</a> <a href="#ideas-divya1509" title="Ideas, Planning, & Feedback">🤔</a> <a href="#content-divya1509" title="Content">🖋</a></td>
   </tr>
 </table>
 
