@@ -170,6 +170,18 @@
         "code",
         "content"
       ]
+    },
+    {
+      "login": "divya1509",
+      "name": "Divya",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/49750052?v=4",
+      "profile": "https://github.com/divya1509",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "content"
+      ]
     }
   ],
   "contributorsPerLine": 7,
