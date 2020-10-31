@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # Introduction
@@ -40,6 +40,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/IamShubhamGupto"><img src="https://avatars2.githubusercontent.com/u/32878682?v=4" width="100px;" alt=""/><br /><sub><b>Shubham</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=IamShubhamGupto" title="Code">💻</a> <a href="#content-IamShubhamGupto" title="Content">🖋</a> <a href="#ideas-IamShubhamGupto" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Crio-Bytes/DSA/commits?author=IamShubhamGupto" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Janhavi-Gautam"><img src="https://avatars2.githubusercontent.com/u/72925384?v=4" width="100px;" alt=""/><br /><sub><b>Janhavi Gautam</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=Janhavi-Gautam" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/G1Joshi"><img src="https://avatars2.githubusercontent.com/u/52780516?v=4" width="100px;" alt=""/><br /><sub><b>Jeevan Chandra Joshi</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=G1Joshi" title="Code">💻</a> <a href="#content-G1Joshi" title="Content">🖋</a> <a href="#ideas-G1Joshi" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Crio-Bytes/DSA/commits?author=G1Joshi" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/TheShubham-K"><img src="https://avatars0.githubusercontent.com/u/52125841?v=4" width="100px;" alt=""/><br /><sub><b>Shubham Kumar</b></sub></a><br /><a href="https://github.com/Crio-Bytes/DSA/commits?author=TheShubham-K" title="Code">💻</a> <a href="#content-TheShubham-K" title="Content">🖋</a></td>
   </tr>
 </table>
 
