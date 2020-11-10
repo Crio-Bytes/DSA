@@ -39,6 +39,24 @@ In [mathematics](https://en.wikipedia.org/wiki/Mathematics) and [computer scienc
 
 <!-- MicroByte Showcase sub-section ends -->
 
+<!-- MicroByte Showcase sub-section starts -->
+
+<details>
+  <summary><b>0-1 Knapsack</b></summary>
+
+
+  ```
+  0-1 Knapsack is a classic Dynamic Programming problem. If you haven't yet studied 
+  DP do give it a shot. In this Mirco-Byte we will focus on how this concept can be 
+  extended to solve other DP problems having similar patterns.
+  ```
+
+</details>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Sreejan Chaudhury ([**@Sreejan-22**](https://github.com/Sreejan-22))
+
+<!-- MicroByte Showcase sub-section ends -->
+
 <!-- MicroByte Showcase section ends -->
 
 ## Contributors ✨
