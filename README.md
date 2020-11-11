@@ -57,6 +57,24 @@ In [mathematics](https://en.wikipedia.org/wiki/Mathematics) and [computer scienc
 
 <!-- MicroByte Showcase sub-section ends -->
 
+<!-- MicroByte Showcase sub-section starts -->
+
+<details>
+  <summary><b>Array in Javascript</b></summary>
+
+
+  ```
+  Arrays are one of the most used data structures. You probably have used it a lot, 
+  but are you aware of the runtimes many array operations? In this microbyte, we are 
+  going deeper into the most common operations and their runtimes.
+  ```
+
+</details>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Divyansh Rastogi ([**@divyanshrastogi51**](https://github.com/divyanshrastogi51))
+
+<!-- MicroByte Showcase sub-section ends -->
+
 <!-- MicroByte Showcase section ends -->
 
 ## Contributors ✨
