@@ -75,6 +75,22 @@ In [mathematics](https://en.wikipedia.org/wiki/Mathematics) and [computer scienc
 
 <!-- MicroByte Showcase sub-section ends -->
 
+<!-- MicroByte Showcase sub-section starts -->
+
+<details>
+  <summary><b>BinaryTree_LevelOrderTraversal_Types</b></summary>
+
+
+  ```
+  Unlike arrays and linked lists which are linear data structures, binary tree is a hierarchical data structure, that is, data in binary trees are stored in a hierarchical fashion. It is similar to how we draw a family tree or represent the different directories and files in the filesystem. In this MicroByte, we'll understand Level Order Traversal in Binary Trees and the different kinds of questions based on this concept. 
+  ```
+
+</details>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— K Anjali Kamath ([**@Anjalikamath**](https://github.com/Anjalikamath))
+
+<!-- MicroByte Showcase sub-section ends -->
+
 <!-- MicroByte Showcase section ends -->
 
 ## Contributors ✨
