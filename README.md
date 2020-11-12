@@ -82,7 +82,12 @@ In [mathematics](https://en.wikipedia.org/wiki/Mathematics) and [computer scienc
 
 
   ```
-  Unlike arrays and linked lists which are linear data structures, binary tree is a hierarchical data structure, that is, data in binary trees are stored in a hierarchical fashion. It is similar to how we draw a family tree or represent the different directories and files in the filesystem. In this MicroByte, we'll understand Level Order Traversal in Binary Trees and the different kinds of questions based on this concept. 
+  Unlike arrays and linked lists which are linear data structures, binary tree is a 
+  hierarchical data structure, that is, data in binary trees are stored in a 
+  hierarchical fashion. It is similar to how we draw a family tree or represent the 
+  different directories and files in the filesystem. In this MicroByte, we'll 
+  understand Level Order Traversal in Binary Trees and the different kinds of 
+  questions based on this concept. 
   ```
 
 </details>
