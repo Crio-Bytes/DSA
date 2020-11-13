@@ -96,6 +96,25 @@ In [mathematics](https://en.wikipedia.org/wiki/Mathematics) and [computer scienc
 
 <!-- MicroByte Showcase sub-section ends -->
 
+<!-- MicroByte Showcase sub-section starts -->
+
+<details>
+  <summary><b>Kadane's Algorithm</b></summary>
+
+
+  ```
+  Kadane's algorithm works by maintaining the start position of a subarray and 
+  repeatedly looking at the next element in the array and deciding to either. 
+  Discarding the subarray and starting a new subarray after that element. Let's look 
+  into it more properly by going through this MicroByte
+  ```
+
+</details>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Jeevan Chandra Joshi ([**@G1Joshi**](https://github.com/G1Joshi))
+
+<!-- MicroByte Showcase sub-section ends -->
+
 <!-- MicroByte Showcase section ends -->
 
 ## Contributors ✨
