@@ -115,6 +115,23 @@ In [mathematics](https://en.wikipedia.org/wiki/Mathematics) and [computer scienc
 
 <!-- MicroByte Showcase sub-section ends -->
 
+<!-- MicroByte Showcase sub-section starts -->
+
+<details>
+  <summary><b>Sorting Algorithms</b></summary>
+
+
+  ```
+  This MicroByte is aimed to understanding different sorting algorithms, along with 
+  their time and space complexity analysis.
+  ```
+
+</details>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Divya Chopra ([**@divya1509**](https://github.com/divya1509))
+
+<!-- MicroByte Showcase sub-section ends -->
+
 <!-- MicroByte Showcase section ends -->
 
 ## Contributors ✨
