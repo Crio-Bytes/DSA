@@ -132,6 +132,26 @@ In [mathematics](https://en.wikipedia.org/wiki/Mathematics) and [computer scienc
 
 <!-- MicroByte Showcase sub-section ends -->
 
+<!-- MicroByte Showcase sub-section starts -->
+
+<details>
+  <summary><b>string_search</b></summary>
+
+
+  ```
+  In this micro-byte, we will be going through the working of the two most famous 
+  string matching algorithms: Rabin Karp and KMP string matching algorithm. The 
+  speciality of both these algorithms is that they achieve linear time complexity for 
+  average case, making them far more superior to naive string matching algorithm 
+  which completes string matching in quadratic time for all cases.
+  ```
+
+</details>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;— Shubham Gupto ([**@IamShubhamGupto**](https://github.com/IamShubhamGupto))
+
+<!-- MicroByte Showcase sub-section ends -->
+
 <!-- MicroByte Showcase section ends -->
 
 ## Contributors ✨
