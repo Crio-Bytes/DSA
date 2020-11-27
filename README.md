@@ -2,6 +2,8 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+<a href="https://twitter.com/crio_do"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/crio_do?style=for-the-badge&color=09f&labelColor=black&logo=twitter&label=@crio_do"></a>
+
 # Introduction
 
 A **data structure** is a named location that can be used to store and organise **data**. And, an **algorithm** is a collection of steps to solve a particular problem. Learning **data structures and algorithms** allow us to write efficient and optimised computer programs.
